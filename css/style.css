@@ -1,0 +1,305 @@
+@import url('reset.css');
+
+
+body {
+	background: #ffffff;
+	font-family: Verdana;
+	font-size: 18px;
+	min-width: 320px;
+}
+
+#wrapper {
+	min-height: 100vh;
+	padding-bottom: 330px;
+}
+
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.nav-holder {
+margin: 0 auto;
+padding: 19px 10px;
+}
+
+.main-nav {
+	text-align: center;
+	position: relative;
+}
+
+
+
+.main-nav a {
+	text-decoration: none;
+	font-size: 18px;
+	color: rgb(70,70,70);
+}
+
+.main-nav a:hover{
+	text-decoration: underline;
+}
+
+.main-nav li {
+	display: inline;
+	padding-right: 65px
+}
+.main-nav li:last-child {
+	padding-right: 0;
+}
+
+li.active>a {
+	font-size: 30px;
+	color: rgb(70,70,70);
+}
+
+.feed {
+	margin: 0 auto;
+}
+
+.post_block {
+	margin-bottom: 22px;
+}
+
+.post_block:last-child {
+	margin-bottom: 0;
+}
+
+.post_header-holder {
+	background: rgb(158,159,158);
+	color: rgb(242,242,242);
+	padding: 21px 0;
+}
+
+.post_header {
+	max-width: 862px;
+	margin: 0 auto;
+	min-height: 72px;
+}
+.post_header a {
+	max-width: 617px;
+	float: left;
+	font-size: 30px;
+	line-height: 36px;
+	text-decoration: none;
+	color: rgb(242,242,242);
+	padding-left: 17px;
+}
+
+.date {
+	display: block;
+	float: right;
+	font-size: 14px;
+	padding-right: 17px;
+	padding-top: 27px;
+}
+
+.content {
+	max-width: 862px;
+	margin: 0 auto;
+	padding: 22px 10px 0 10px;
+}
+
+.content-img {
+	display: inline-block;
+}
+
+.description {
+	float: right;
+	font-size: 14px;
+	color: rgb(127,127,127);
+	max-width: 351px;
+}
+
+.description h2 {
+	padding-bottom: 25px;
+}
+
+.article p {
+	padding-bottom: 25px;
+}
+
+.article p:last-child {
+	padding-bottom: 0;
+}
+
+.left-img {
+	float: left;
+}
+
+.right-img {
+	float: right;
+}
+
+.footer {
+	background: rgb(229,226,225);
+	height: 230px;
+	margin-top:-230px;
+}
+
+.footer-holder {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.contacts {
+	padding-top: 131px;
+	font-size: 16px;
+	float: left;
+	padding-left: 34px;
+	padding-right: 45px;
+}
+
+.contacts li {
+	display: inline-block;
+	text-align: left;
+	padding-right: 45px;
+	line-height: 36px;
+}
+
+.contacts li:last-child {
+	padding-right: 0;
+}
+
+.contacts a {
+	text-decoration: none;
+	color: rgb(70,70,70);
+}
+
+.contact-us {
+	font-size: 26px;;
+}
+
+
+.logo {
+	float:left;
+	padding-top: 105px;
+}
+
+.shelf {
+	float: right;
+	margin-top: -105px;
+	margin-left: -90px;
+}
+
+@media screen and (max-width:972px) {
+	.logo {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		padding-top: 58px;
+	}
+	.contacts {
+		float: none;
+		text-align: center;
+		padding-top: 5px;
+	}
+	.shelf {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width:892px) {
+	.left-img {
+		float: none;
+	}
+	.right-img {
+		float: none;
+	}
+	.content-img {
+		text-align: center;
+	}
+	.multiple-content-img {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 824px) {
+	.content {
+		text-align: center;
+	}
+	.content-img {
+		margin: 0 auto;
+	}
+
+	.content-img img {
+		width: 396px;
+		max-width: 100%;
+	}
+	.multiple-content-img  img{
+		width: 284px;
+		max-width: 100%;
+	}
+	.description {
+		padding-top: 22px;
+		float: none;
+		margin: 0 auto;
+		max-width: 396px;
+		text-align: left;
+	}
+	.post_header {
+		padding-left: 10px;
+	}
+	.post_header a {
+		max-width: none;
+		float: none;
+		padding: 0;
+		display: block;
+		text-align: left;
+	}
+	.date {
+		float: left;
+		padding-top: 5px;
+		/*text-align: center;*/
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 623px) {
+	.hamburger {
+		cursor: pointer;
+		display: block;
+		padding: 15px;
+	}
+	.line {
+		border-bottom: 4px solid #bbb;
+		width: 35px;
+		margin-bottom: 6px;
+	}
+	.line:last-child {
+		margin-bottom: 0;
+	}
+	.main-nav li {
+		width: 100%;
+		display: block;
+		padding-right: 0;
+		padding-bottom: 10px;
+	}
+	.main-nav li:last-child{
+		padding-bottom: 0;
+	}
+	.main-nav {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.3s;
+	}
+	.open {
+		height: 125px;
+	}
+}
+
+@media screen and (max-width: 556px) {
+	.contacts {
+		display:none;
+	}
+	.logo {
+		padding-top: 72px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+
+	}
+	}
+}
